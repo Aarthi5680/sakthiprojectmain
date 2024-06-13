@@ -15,7 +15,7 @@ function Moments() {
 
   const getuser = () => {
     axios
-      .get("http://localhost:3004/api/getUser")
+      .get("https://sakthimainproject.onrender.com/api/getUser")
       .then(function (response) {
         setmomentUserData(response.data.data)
         console.log(response);
