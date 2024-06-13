@@ -70,7 +70,7 @@ function Signup() {
     console.log(data);
 
     axios
-      .post("https://sakthimainproject.onrender.com/Adduser", data)
+      .post("https://sakthimainproject.onrender.com/api/Adduser", data)
       .then(function (response) {
         alert(response.data.message);
         navigate("/addmoments");
