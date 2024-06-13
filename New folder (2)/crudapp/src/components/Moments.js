@@ -36,7 +36,7 @@ console.log(momentUserData);
   const handleDelete = (e,userid) => {
     console.log(userid);
     axios
-    .delete(`http://localhost:3004/api/Deleteuser/${userid}`)
+    .delete(`https://sakthimainproject.onrender.com/api/Deleteuser/${userid}`)
     .then(function (response) {
       getuser();
       console.log(response);
