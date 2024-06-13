@@ -22,7 +22,7 @@ function Editmoments() {
 
   const getEditUser = () => {
     axios
-      .get(`http://localhost:3004/api/getuserDetails/${userid.userid}`)
+      .get(`https://sakthimainproject.onrender.com/getuserDetails/${userid.userid}`)
       .then(function (response) {
         setUpdateUserData(response.data.data)
         console.log(response);
