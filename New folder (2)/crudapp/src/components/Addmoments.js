@@ -70,7 +70,7 @@ function Addmoments() {
     console.log(input);
 
     axios
-      .post("http://localhost:3004/api/addmoments", input)
+      .post("https://sakthimainproject.onrender.com", input)
       .then(function (response) {
         navigate("/moments");
         console.log(response);
