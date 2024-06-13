@@ -37,7 +37,7 @@ function Editmoments() {
 
   const handleEdit = () => {
     axios
-      .put(`http://localhost:3004/api/updateUser/${userid.userid}`,input)
+      .put(`https://sakthimainproject.onrender.com/api/updateUser/${userid.userid}`,input)
       .then(function (response) {
         getEditUser()
         navigate('/moments')
